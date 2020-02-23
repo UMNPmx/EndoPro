@@ -1,0 +1,14 @@
+Package: EndoPro
+Type: Package
+Title: Endogenous production estimation
+Version: 0.1.0
+Author: Mutaz Jaber
+Maintainer: Mutaz Jaber <jaber038@umn.edu>
+Description: This package provides a different estimation method for endogenous substances 
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.2
+Suggests:
+    testthat
