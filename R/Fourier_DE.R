@@ -8,7 +8,7 @@
 #'@param h Number of harmonics. 3 is allowed
 #'
 #'@return this function provides estimation of fourier coefficients
-#'@export fourier_est Fourier coefficient estimation
+#'@export fourier_est
 #'
 
 fourier_est <- function(y, t, p, h = c("1", "2", "3")) {
@@ -29,12 +29,12 @@ fourier_est <- function(y, t, p, h = c("1", "2", "3")) {
     stop("Only three harmonics allowd")
   }
 
-  rss <- function(y, pred, t, h) {
+  rss <- function(y, pred, t, h,p) {
     sum(((y - pred)) ^ 2)
   }
   fr <- stats::nlm(
     rss,
-    p = c(0.1, 0.1, 0.1),
+    p = p,
     t = t,
     y = y,
     h = h

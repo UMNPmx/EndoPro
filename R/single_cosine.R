@@ -6,7 +6,7 @@
 #' @param y Observed concentration
 #' @param p Initial values. p1: Amplitude p2: mean endogenous rate p3: acrophase time
 #'
-#' @export single_cos Single cosine function
+#' @export single_cos
 
 
 single_cos <- function(y, t, p) {

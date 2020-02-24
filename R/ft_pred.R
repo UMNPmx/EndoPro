@@ -6,8 +6,7 @@
 #'
 #' @param fourier_est function to estimate Fourier coefficients
 #' @param t time data
-#' @import fourier_est EndoPro
-#' @export
+#' @export ft_pred
 #'
 #'
 
