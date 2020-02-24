@@ -1,13 +1,13 @@
 #' Concentration prediction Fourier function
 #'
-#' This function will allow to predict the concentration after the estimation from `r fourier_est`
+#' This function will allow to predict the concentration after the estimation from `fourier_est`
 #'
-#'  @author Mutaz J
+#' @author Mutaz J
 #'
-#'  @param fourier_est function to estimate Fourier coefficients
-#'  @param t time data
-#'  @import fourier_est EndoPro
-#'  @export
+#' @param fourier_est function to estimate Fourier coefficients
+#' @param t time data
+#' @import fourier_est EndoPro
+#' @export
 #'
 #'
 
