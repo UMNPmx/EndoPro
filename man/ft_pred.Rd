@@ -12,7 +12,7 @@ ft_pred(fourier_est, t, h)
 \item{t}{time data}
 }
 \description{
-This function will allow to predict the concentration after the estimation from \verb{r fourier_est}
+This function will allow to predict the concentration after the estimation from \code{fourier_est}
 }
 \author{
 Mutaz J
