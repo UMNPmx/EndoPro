@@ -9,7 +9,7 @@ Endogenous production estimation package that includes several function to estim
 
 ### installation:
 --- 
-
+CRAN version 
 ```{r}
 install.packages("EndoPro")
 ``` 
