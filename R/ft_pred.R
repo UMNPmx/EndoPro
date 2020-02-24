@@ -6,22 +6,23 @@
 #'
 #'  @param fourier_est function to estimate Fourier coefficients
 #'  @param t time data
-#'
+#'  @import fourier_est EndoPro
 #'  @export
 #'
 #'
 
-ft_pred <- function(fourier_est,t){
+ft_pred <- function(fourier_est,t, h){
   if (h == "1") {
-    predft <- fr$estimate[1] + fr$estimate[2] * cos(2 * pi * t / 24) + fr$estimate[3] * sin(2 * pi * t / 24)
+    predft <- fourier_est[1] + fourier_est[2] * cos(2 * pi * t / 24) + fourier_est[3] * sin(2 * pi * t / 24)
 
   } else if (h == "2") {
-    predft <- fr$estimate[1] + fr$estimate[2] * cos(2 * pi * t / 24) + fr$estimate[3]  * sin(2 * pi * t / 24) +
-      fr$estimate[4] * cos(2 * pi * t / 12) + fr$estimate[5] * sin(2 * pi * t / 12)
+    predft <- fourier_est[1] + fourier_est[2] * cos(2 * pi * t / 24) + fourier_est[3]  * sin(2 * pi * t / 24) +
+      fourier_est[4] * cos(2 * pi * t / 12) + fourier_est[5] * sin(2 * pi * t / 12)
   } else if (h == "3") {
-    predft <- fr$estimate[1] + fr$estimate[2] * cos(2 * pi * t / 24) + fr$estimate[3] * sin(2 * pi * t / 24) +
-      fr$estimate[4] * cos(2 * pi * t / 12) + fr$estimate[5] * sin(2 * pi * t / 12) +
-      fr$estimate[6] * cos(2 * pi * t / 8) + p[7] * sin(2 * pi * t / 2)
+    predft <- fourier_est[1] + fourier_est[2] * cos(2 * pi * t / 24) + fourier_est[3] * sin(2 * pi * t / 24) +
+      fourier_est[4] * cos(2 * pi * t / 12) + fourier_est[5] * sin(2 * pi * t / 12) +
+      fourier_est[6] * cos(2 * pi * t / 8) + fourier_est[7] * sin(2 * pi * t / 2)
   }
+
   return(predft)
 }
