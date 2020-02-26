@@ -17,5 +17,5 @@ install.packages("EndoPro")
 or the developed version
 
 ```{r}
-remotes::install_github("Mutaz94/EndoPro")
+devtools::install_github("Mutaz94/EndoPro")
 ```
