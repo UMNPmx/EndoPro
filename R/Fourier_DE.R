@@ -30,7 +30,7 @@ fourier_est <- function(y, t, p, h = c("1", "2", "3")) {
   }
 
   rss <- function(y, pred, t, h,p) {
-    sum(((y - pred)) ^ 2)
+    sum(((y - pred)) ^ 2, na.rm = T)
   }
   fr <- stats::nlm(
     rss,
