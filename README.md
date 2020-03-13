@@ -11,5 +11,5 @@ Endogenous production estimation package that includes several function to estim
 --- 
 
 ```{r}
-remotes::install_github("Mutaz94/EndoPro")
+remotes::install_github("UMNPmx/EndoPro")
 ```
