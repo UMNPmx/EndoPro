@@ -9,12 +9,6 @@ Endogenous production estimation package that includes several function to estim
 
 ### installation:
 --- 
-CRAN version 
-```{r}
-install.packages("EndoPro")
-``` 
-
-or the developed version
 
 ```{r}
 remotes::install_github("Mutaz94/EndoPro")
